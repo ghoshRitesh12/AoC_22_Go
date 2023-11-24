@@ -1,4 +1,4 @@
-package D1
+package Day1
 
 import (
 	"bufio"
@@ -45,7 +45,7 @@ func A(filepath string) {
 	}
 
 	fmt.Println("")
-	fmt.Println("Day 1 > Qa")
+	fmt.Println("Day 1 > Q.a")
 	fmt.Println("Max amount is: ", max);
 
 	if err := scanner.Err(); err != nil {
