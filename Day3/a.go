@@ -25,10 +25,9 @@ func getLetterPriority(letterAscii int) int {
 func findDuplicateItem(src1 []byte, src2 []byte) int {
 	var duplicateItem int
 
-	for _, value := range src1 {
-		val := byte(value)
+	for _, val := range src1 {
 		if slices.Contains[[]byte, byte](src2, val) {
-			duplicateItem = int(value)
+			duplicateItem = int(val)
 			break
 		}
 	}
