@@ -58,7 +58,7 @@ func B(filepath string) {
 	file, err := os.Open(filepath);
 	if err != nil {
 		fmt.Println("Error: ", err);
-		return;
+		return
 	}
 	defer file.Close()
 
