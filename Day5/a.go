@@ -50,5 +50,7 @@ func A(filepath string) {
 		topCrates += s.Peek()
 	}
 
+	fmt.Println()
+	fmt.Println("Day 5 > Q.a")
 	fmt.Println("Top crates: ", topCrates)
 }
