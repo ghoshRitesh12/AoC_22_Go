@@ -27,7 +27,7 @@ func A(filepath string) {
 	for (scanner.Text() != " 1   2   3   4   5   6   7   8   9 ") {
 		for i, v := range scanner.Text() {
 			if v != ' ' && v != '[' && v != ']' {
-				stacks[i/indexRoundBackNo].Push(string(v))
+				stacks[i/indexRoundBackNo].AddToBottom(string(v))
 			}
 		}
 		scanner.Scan()
